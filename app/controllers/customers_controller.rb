@@ -44,6 +44,6 @@ class CustomersController < ApplicationController
 
   private
     def customer_params
-      params.require(:customer).permit(:title, :body, :status)
+      params.require(:customer).permit(:code, :name, :terms, :status)
     end
 end
